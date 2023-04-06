@@ -25,9 +25,9 @@ public class Measurement {
     @NotNull
     @Column(name = "measurement_data_time")
     private LocalDateTime measurementDataTime;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "sensor", referencedColumnName = "name")
-    @NotNull
     private Sensor sensor;
 
     public Measurement() {
@@ -60,7 +60,7 @@ public class Measurement {
         this.value = value;
     }
 
-    public Boolean getRaining() {
+    public Boolean isRaining() {
         return raining;
     }
 
