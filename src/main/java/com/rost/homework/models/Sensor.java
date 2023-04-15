@@ -17,12 +17,14 @@ public class Sensor implements Serializable {
     @Size(min = 3,max = 30,message = "Имя сенсора должно быть в диапазоне от 3х до 30 символов")
     private String name;
 
-    public Sensor() {
-    }
 
 
     public Sensor(String name) {
         this.name = name;
+    }
+
+    public Sensor() {
+
     }
 
     public int getId() {

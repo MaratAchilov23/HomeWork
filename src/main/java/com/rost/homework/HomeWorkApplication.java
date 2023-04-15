@@ -13,13 +13,8 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class HomeWorkApplication {
-
-
-
-
-
     public static void main(String[] args) {
-
+        System.out.println("Мы в контейнере! Ура- Ура!!!");
         SpringApplication.run(HomeWorkApplication.class, args);
     }
 
